@@ -2,7 +2,7 @@
 
 my solutions for each competitive programing website
 
-## Dmoj
+## DMOJ
 
 user: [mateobarbosa](https://dmoj.ca/user/mateobarbosa)    
 problem count: 63 (not all are uploaded)
