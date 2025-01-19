@@ -18,6 +18,7 @@ problem count: 3
 ### competitions
 
 - Codeforces Round 993 (Div. 4)
+- Codeforces Round 998 (Div. 3)
 
 ## CSES
 
