@@ -22,12 +22,13 @@ const ll LLINF = 0x3f3f3f3f3f3f3f3f;
 int n,ti;
 void solve(int ti){
     int c = ti&1;
-    int closest_square = static_cast<int>(sqrt(ti));
-    cout << closest_square;
+    int closest_square = round(sqrt(ti));
+    cerr << closest_square;
     switch (c) {
 
         case 0:
-            cout << "even";
+            cerr << "even";
+            
             break;
         case 1:
             cout << "odd";

@@ -13,17 +13,11 @@ typedef vector<pii> vpii;
 #define SZ(v) ((int) (v).size())
 const int INF = 0x3f3f3f3f;
 const ll LLINF = 0x3f3f3f3f3f3f3f3f;
-#define scan(x) cin >> x
-#define scanArr(arr, n) FR(i, n) scan(arr[i])
-#define scanArr2D(arr, n, m) FR(i, n) FR(j, m) scan(arr[i][j])
 #define FR(i, n) for(int i = 0; i < (n); i++)
 #define FOR(i, a, b) for(int i = (b); i < (a); i++)
 #define FORR(i, a, b) for(int i = (a); i >= (b); i--)
 #define dbg(x){cerr << #x << ' ' << (x) << endl;}
 #define dbgArr(arr, n){cerr << #arr; FR(_i, n) cerr << ' ' << (arr)[_i]; cerr << endl;}
-#define dbg2D(arr) for (const auto& row : arr) { for (auto val : row) cout << val << " "; cout << endl; }
-#define dbg2D(arr, m, n) cerr << #arr << endl; for (int i = 0; i < m; ++i) { for (int j = 0; j < n; ++j) cout << arr[i][j] << " "; cout << endl; }
-
 
 //globals
 
