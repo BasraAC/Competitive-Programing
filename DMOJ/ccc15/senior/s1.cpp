@@ -27,14 +27,31 @@ const ll LLINF = 0x3f3f3f3f3f3f3f3f;
 
 //globals
 
+stack<int> s; 
 
-
+int k, ai;
+int total = 0;
 
 void solve(){
 
 
 }
 int main(){
-  
+    scan(k);
+
+    FR(i,k){
+        scan(ai);
+        if(ai == 0){
+            total -= s.top();
+            s.pop();
+        }
+        else{
+            total += ai;
+            s.push(ai);
+        }
+
+
+    }
+    cout << total;
     return 0;
 }

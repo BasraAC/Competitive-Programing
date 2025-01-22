@@ -27,14 +27,35 @@ const ll LLINF = 0x3f3f3f3f3f3f3f3f;
 
 //globals
 
-
-
+const int day = 18;
+const int month = 2;
+int uday,umonth;
 
 void solve(){
-
+    if (umonth > month){
+        cout << "After";
+    }
+    if(umonth < month){
+        cout << "Before";
+    }
+    if(umonth == month){
+        if(day > uday){
+            cout << "Before";
+        }
+        if(day < uday){
+            cout << "After";
+        }
+        if(day == uday){
+            cout << "Special";
+        }
+    }
 
 }
 int main(){
+    scan(umonth);
+    scan(uday);
+  
+    solve();
   
     return 0;
 }

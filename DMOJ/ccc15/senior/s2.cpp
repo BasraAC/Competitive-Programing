@@ -28,13 +28,62 @@ const ll LLINF = 0x3f3f3f3f3f3f3f3f;
 //globals
 
 
-
-
+int j,a;
+int cntr = 0;
+vi arr; 
 void solve(){
+    FR(i,a){
+        char c;
+        int k;
+
+        scan(c);
+        scan(k);
+
+        int val = -1;
+        if(c == 'S') val = 1;
+        if(c == 'M') val = 2;
+        if(c == 'L') val = 3;
+
+
+        if (arr[k - 1] >= val){
+            cntr++;
+            arr[k - 1] = -1;
+        }
+
+
+
+
+    }
+    cout << cntr;
 
 
 }
 int main(){
-  
+    scan(j);
+    scan(a);
+
+    arr.resize(j);
+
+    FR(i,j){
+        char c;
+        scan(c);
+
+        int val = -1;
+
+        if(c == 'S') val = 1;
+        if(c == 'M') val = 2;
+        if(c == 'L') val = 3;
+
+
+        arr[i] = val;
+    }
+    solve();
+
+
+    //dbgArr(arr,j);
+
+
+
+
     return 0;
 }

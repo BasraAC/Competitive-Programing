@@ -29,12 +29,34 @@ const ll LLINF = 0x3f3f3f3f3f3f3f3f;
 
 
 
+int cntr =  0; 
 
+const int r = 6;
 void solve(){
 
 
 }
 int main(){
-  
+    FR(i,r){
+        char c;
+        scan(c);
+
+        if(c == 'W'){
+            cntr++;
+        }
+    }
+
+    if(cntr == 5 || cntr == 6){
+        cout << 1;
+    }
+    if (cntr == 3 || cntr == 4){
+        cout << 2;
+    }
+    if (cntr == 2 || cntr == 1){
+        cout << 3;
+    }
+    if (cntr == 0) {
+        cout << -1;
+    }
     return 0;
 }

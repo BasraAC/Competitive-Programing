@@ -6,8 +6,8 @@ typedef pair<ll, ll> pll;
 typedef vector<int> vi;
 typedef vector<pii> vpii;
 #define pb push_back
-#define f first
-#define s second
+#define fs first
+#define sn second
 #define ms(a, x) memset(a, x, sizeof(a))
 #define ALL(v) begin(v), end(v)
 #define SZ(v) ((int) (v).size())
@@ -27,14 +27,42 @@ const ll LLINF = 0x3f3f3f3f3f3f3f3f;
 
 //globals
 
+int n;
+vector<int> arr;
+vector<int> arrTransform;
 
+
+unordered_map<int,int> hashTransform;
 
 
 void solve(){
+    int cntr = n;
 
+    FR(i,n){
+        if (hashTransform[arr[i+1]] - hashTransform[arr[i]]  == 1){ 
+            cntr--;
+        }
+    }
+
+    cout << cntr << "\n";
 
 }
 int main(){
-  
+
+    fast 
+    scan(n);
+
+    arr.resize(n);
+    arrTransform.resize(n);
+    
+    scanArr(arr, n);
+
+    FR(i,n){
+        int ai;
+        cin >> ai;
+        arrTransform[i] = ai;
+        hashTransform[ai] = i;
+    }
+    solve();
     return 0;
 }

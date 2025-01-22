@@ -6,8 +6,8 @@ typedef pair<ll, ll> pll;
 typedef vector<int> vi;
 typedef vector<pii> vpii;
 #define pb push_back
-#define f first
-#define s second
+#define fs first
+#define sn second
 #define ms(a, x) memset(a, x, sizeof(a))
 #define ALL(v) begin(v), end(v)
 #define SZ(v) ((int) (v).size())
@@ -27,14 +27,44 @@ const ll LLINF = 0x3f3f3f3f3f3f3f3f;
 
 //globals
 
+int t,n;
+vector<int> arr;
 
+//first subtask:
 
+//rules josh goes first then mike, whoever has no stones on their turn looses, they pick the other person
+
+//second subtask
 
 void solve(){
+    if (SZ(arr) % 2 == 0){
+        cout << "Mike\n";
+    }
+    else{
+        cout << "Josh\n";
+    }
+
+
 
 
 }
+
 int main(){
-  
+    fast
+    scan(t);
+
+    FR(q,t){
+
+        scan(n);
+
+        arr.resize(n);
+        scanArr(arr, n);
+        solve();
+        arr.clear();
+
+    }
+
+    //dbgArr(arr, SZ(arr));
+        
     return 0;
 }
