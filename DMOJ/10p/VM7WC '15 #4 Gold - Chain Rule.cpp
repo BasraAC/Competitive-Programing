@@ -41,6 +41,7 @@ void Djkistra(int source,vector<int>& dist ){
         }
     }
 }
+
 int main() {
     fast
     cin >> n >> m;
